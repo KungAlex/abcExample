@@ -13,3 +13,8 @@ class IPluginBaseService(object):
     def save(self, output, data):
         """save"""
         return
+
+    @abc.abstractmethod
+    def show(self, input):
+        """Show data from the input source and return an object."""
+        return

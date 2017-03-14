@@ -10,6 +10,9 @@ class IPluginBaseImplementation(IPluginBaseService):
     def save(self, output, data):
         return output.write(data)
 
+    def show(self, inputString):
+        return inputString
+
 
 if __name__ == '__main__':
     print 'subclass:', issubclass(IPluginBaseImplementation, IPluginBaseService)
